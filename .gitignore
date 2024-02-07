@@ -1,0 +1,16 @@
+*.csv
+*.json
+secrets.env
+src/reddit/
+src/__pycache__/
+src/news_scraper/wsj_scraper/__pycache__/
+.env
+.ipynb_checkpoints/
+src/tmp_data/
+__pycache__
+.DS_store
+json-outputs-og/
+*.doc
+*.docx
+*.tmp
+ieer/

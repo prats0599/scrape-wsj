@@ -1,8 +1,5 @@
 """
 This is the main scrapper that make calls to the WSJ website
-
-Author: Muneeb Ur Rehman (muneeb0035@gmail.com)
-Date: 18 July 2023
 """
 import time
 import requests
@@ -12,49 +9,35 @@ from selenium import webdriver
 from concurrent.futures import ThreadPoolExecutor, wait, as_completed
 import threading
 from defaults import *
+from selenium.webdriver.chrome.service import Service
 
 from inputs import NUM_THREADS, LOCAL_TEST
 
 CONTENTS = {}
 # Create a lock to synchronize access to the CSV file
 csv_lock = threading.Lock()
+firefox_ext_lock = threading.Lock()
 
 
 def write_to_csv(row):
     # Acquire the lock before writing to the CSV file
     with csv_lock:
-        with open(CSV_FILE, 'a', newline='') as csvfile:
+        with open(CSV_FILE, 'a', newline='', encoding="utf-8") as csvfile:
             csv_writer = csv.writer(csvfile)
             csv_writer.writerow(row)
         LOGGER.debug("Data written to CSV file.")
 
 
-def run_web_driver_session(url, with_ext=False, headless=True):
+def run_web_driver_session(url):
     init_t = time.time()
-    chrome_options = webdriver.ChromeOptions()
+    with firefox_ext_lock:
+        driver = webdriver.Firefox()#options=PROFILE_OPTIONS)
+        driver.install_addon(FIREFOX_EXT)
+        time.sleep(2)
 
-    prefs = {'profile.default_content_setting_values': {'cookies': 2, 'images': 2, 
-                                'plugins': 2, 'popups': 2, 'geolocation': 2, 
-                                'notifications': 2, 'auto_select_certificate': 2, 'fullscreen': 2, 
-                                'mouselock': 2, 'mixed_script': 2, 'media_stream': 2, 
-                                'media_stream_mic': 2, 'media_stream_camera': 2, 'protocol_handlers': 2, 
-                                'ppapi_broker': 2, 'automatic_downloads': 2, 'midi_sysex': 2, 
-                                'push_messaging': 2, 'ssl_cert_decisions': 2, 'metro_switch_to_desktop': 2, 
-                                'protected_media_identifier': 2, 'app_banner': 2, 
-                                'durable_storage': 2}}
-    chrome_options.add_experimental_option('prefs', prefs)
-    chrome_options.add_argument("disable-infobars")
-
-    if headless:
-        chrome_options.add_argument('--headless')
-    if with_ext:
-        chrome_options.add_argument(
-            'load-extension={0}'.format(EXT_FILE)
-        )
-    # Start driver
-    driver = webdriver.Chrome(executable_path=CHROME_DRIVER, chrome_options=chrome_options)
     # Minimize the browser window
     driver.minimize_window()
+    # LOGGER.info(f"Extracting from:{url}")
     driver.get(url)
     LOGGER.debug(f"Time to start webdriver {time.time() - init_t}")
     return driver
@@ -67,7 +50,7 @@ def get_day_data(url, day_dict):
     }
     new_dict = {}
     curr_date = url[-10:]
-    LOGGER.info(curr_date)
+    # LOGGER.info(curr_date)
 
     while True:
         time.sleep(0.5)
@@ -78,6 +61,7 @@ def get_day_data(url, day_dict):
         else:
             response = requests.get(url, headers=headers)
             html_content = response.text
+            # print(html_content)
 
         # Parse the HTML content with BeautifulSoup
         soup = BeautifulSoup(html_content, "html.parser")
@@ -92,8 +76,7 @@ def get_day_data(url, day_dict):
             articles_type = article_type_div.get_text(strip=True).strip()
             headline = headline_span.get_text(strip=True)
             href = headline_span.find_parent("a")["href"]
-            if articles_type in ["European Business News", "U.S. Business News",
-                                "Tech", "AWSJ", "WSJE", "Earnings", "Autos", "U.S. Stocks"]:
+            if articles_type in ["Business", "Economy", 'Finance', 'U.S. Economy']:
                 new_dict[href] = {"articles_type": articles_type,
                                   "headline": headline, 'date': curr_date}
         
@@ -110,17 +93,30 @@ def get_day_data(url, day_dict):
                 break
         else:
             break
+    links = [links for links in new_dict.keys()]
+    LOGGER.info(f"links extracted: {links}")
 
+
+def get_article_content(html_content):
+    "Get the HTML content of the tab"
+    soup = BeautifulSoup(html_content, 'html.parser')
+    p_elements = soup.find_all("p", attrs={"data-type": "paragraph"})
+    # Process the extracted <p> elements as needed
+    content = str()
+    for p in p_elements:
+        # Access the content of the <p> element
+        content += p.text.strip()
+    return content
 
 def get_post_content(urls):
-    driver = run_web_driver_session(urls[0], with_ext=True, headless=False)
+    driver = run_web_driver_session(urls[0])
     # Get the updated page source\
 
     init_t = time.time()
     for idx, url_1 in enumerate(urls[1:]):
         # Open a new tab
         driver.execute_script("window.open();")
-        # Switch to the second tab
+        # Switch to the next tab
         driver.switch_to.window(driver.window_handles[idx + 1])
         driver.get(url_1)
     LOGGER.debug(f"Time to load data in new tabs {time.time() - init_t}")
@@ -133,20 +129,31 @@ def get_post_content(urls):
         
         # Get the URL of the tab
         url = driver.current_url
+        if url.startswith("moz-extension"):
+            continue
         
-        # Get the HTML content of the tab
+        time.sleep(3)
         html_content = driver.page_source
-        soup = BeautifulSoup(html_content, 'html.parser')
-        p_elements = soup.find_all("p", attrs={"data-type": "paragraph"})
-        # Process the extracted <p> elements as needed
-        content = str()
-        for p in p_elements:
-            # Access the content of the <p> element
-            content += p.text.strip()
+        content = get_article_content(html_content)        
+        retries = 0
+        while content == "" and retries<3:
+            # driver.get(url)
+            driver.refresh()
+            time.sleep(5)
+            html_content = driver.page_source
+            content = get_article_content(html_content)
+            retries += 1
+
+        if retries == 3:
+            LOGGER.debug(f"Retries failed on URL: {url}")
+        elif retries>0:
+            LOGGER.info(f"{retries} retries sucessful")
         headline = CONTENTS[url]['headline']
         curr_date = CONTENTS[url]['date']
-        data = [curr_date, headline, content]
+        data = [url, curr_date, headline, content]
         write_to_csv(data)
+    # driver.implicitly_wait(2)
+    time.sleep(2)
     driver.quit()
     LOGGER.debug(f"Time to read_page {time.time() - init_t}")
 
