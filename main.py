@@ -1,8 +1,5 @@
 """
 This is the main file which initiates the Scrapper Session.
-
-Author: Muneeb Ur Rehman (muneeb0035@gmail.com)
-Date: 18 July 2023
 """
 
 from defaults import LOGGER

@@ -1,0 +1,257 @@
+2024-01-30 21:49:51,407 - INFO - Starting the Scraper
+2024-01-30 21:49:51,408 - INFO - Scraping from 2023-10-04 to 2024-01-28
+2024-01-30 21:49:51,408 - INFO - Started scraping: 2023/10/04
+2024-01-30 21:49:52,772 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/04?page=2
+2024-01-30 21:49:53,980 - INFO - links extracted: ['https://www.wsj.com/business/retail/clorox-warns-of-a-sales-mess-after-cyberattack-2f8dd98c', 'https://www.wsj.com/health/healthcare/healthcare-worker-strike-kaiser-permanente-b404e9d5', 'https://www.wsj.com/business/airlines/dodgy-jet-parts-ge-boeing-plane-engines-a3fcbcfd', 'https://www.wsj.com/finance/investing/frustrating-revisions-to-jobs-data-slow-wall-street-trading-12f0b66', 'https://www.wsj.com/finance/homeowners-flock-to-last-resort-insurance-policies-a7ae9439', 'https://www.wsj.com/economy/central-banking/bond-selloff-threatens-hopes-for-economys-soft-landing-80bb152a']
+2024-01-30 21:49:53,982 - INFO - Got 6 relevent posts
+2024-01-30 21:49:53,983 - DEBUG - 1 batches created
+2024-01-30 21:49:53,983 - DEBUG - 5 per window
+2024-01-30 21:49:55,991 - INFO - Current Batch length: 2
+2024-01-30 21:49:55,993 - INFO - Waiting for the jobs to complete
+2024-01-30 21:50:24,756 - DEBUG - Time to start webdriver 28.763013124465942
+2024-01-30 21:50:24,757 - DEBUG - Time to load data in new tabs 0.0
+2024-01-30 21:50:27,015 - DEBUG - Time to start webdriver 31.021447896957397
+2024-01-30 21:50:28,177 - DEBUG - Data written to CSV file.
+2024-01-30 21:50:36,519 - DEBUG - Time to read_page 11.761252164840698
+2024-01-30 21:50:37,232 - DEBUG - Time to load data in new tabs 10.21659779548645
+2024-01-30 21:50:40,760 - DEBUG - Data written to CSV file.
+2024-01-30 21:50:44,268 - DEBUG - Data written to CSV file.
+2024-01-30 21:50:48,153 - DEBUG - Data written to CSV file.
+2024-01-30 21:50:51,598 - DEBUG - Data written to CSV file.
+2024-01-30 21:50:54,788 - DEBUG - Data written to CSV file.
+2024-01-30 21:51:00,330 - DEBUG - Time to read_page 23.097213983535767
+2024-01-30 21:51:04,423 - INFO - BATCH COMPLETED
+2024-01-30 21:51:04,423 - INFO - Started scraping: 2023/10/05
+2024-01-30 21:51:05,767 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/05?page=2
+2024-01-30 21:51:07,334 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/05?page=3
+2024-01-30 21:51:08,403 - INFO - links extracted: ['https://www.wsj.com/finance/mortgage-rate-october-d281e81e', 'https://www.wsj.com/business/3m-innovation-scientists-lawsuits-contamination-5a48d46f', 'https://www.wsj.com/finance/stocks/where-have-the-traders-gone-a-4-trillion-market-is-stuck-in-a-rut-9b46f946', 'https://www.wsj.com/business/ozempic-impact-snack-food-companies-9eec87e5']
+2024-01-30 21:51:08,405 - INFO - Got 4 relevent posts
+2024-01-30 21:51:08,405 - DEBUG - 1 batches created
+2024-01-30 21:51:08,406 - DEBUG - 5 per window
+2024-01-30 21:51:10,421 - INFO - Current Batch length: 1
+2024-01-30 21:51:10,423 - INFO - Waiting for the jobs to complete
+2024-01-30 21:51:23,994 - DEBUG - Time to start webdriver 13.57064437866211
+2024-01-30 21:51:29,947 - DEBUG - Time to load data in new tabs 5.952240467071533
+2024-01-30 21:51:33,344 - DEBUG - Data written to CSV file.
+2024-01-30 21:51:36,743 - DEBUG - Data written to CSV file.
+2024-01-30 21:51:40,205 - DEBUG - Data written to CSV file.
+2024-01-30 21:51:43,737 - DEBUG - Data written to CSV file.
+2024-01-30 21:51:49,853 - DEBUG - Time to read_page 19.90524911880493
+2024-01-30 21:51:53,950 - INFO - BATCH COMPLETED
+2024-01-30 21:51:53,953 - INFO - Started scraping: 2023/10/06
+2024-01-30 21:51:55,409 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/06?page=2
+2024-01-30 21:51:56,716 - INFO - links extracted: ['https://www.wsj.com/arts-culture/music/the-record-executive-cracking-todays-girl-code-c73026c5', 'https://www.wsj.com/economy/jobs/jobs-report-september-economy-unemployment-d9409b8b', 'https://www.wsj.com/business/logistics/new-this-holiday-season-discounts-on-shipping-packages-7297097c', 'https://www.wsj.com/business/energy-oil/chevron-labor-dispute-flares-up-again-in-australia-94768277', 'https://www.wsj.com/lifestyle/careers/accounting-salary-cpa-shortage-dec2caa2']
+2024-01-30 21:51:56,718 - INFO - Got 5 relevent posts
+2024-01-30 21:51:56,719 - DEBUG - 1 batches created
+2024-01-30 21:51:56,719 - DEBUG - 5 per window
+2024-01-30 21:51:58,735 - INFO - Current Batch length: 1
+2024-01-30 21:51:58,736 - INFO - Waiting for the jobs to complete
+2024-01-30 21:52:12,277 - DEBUG - Time to start webdriver 13.540491819381714
+2024-01-30 21:52:20,037 - DEBUG - Time to load data in new tabs 7.758564472198486
+2024-01-30 21:52:23,503 - DEBUG - Data written to CSV file.
+2024-01-30 21:52:26,755 - DEBUG - Data written to CSV file.
+2024-01-30 21:52:30,206 - DEBUG - Data written to CSV file.
+2024-01-30 21:52:33,620 - DEBUG - Data written to CSV file.
+2024-01-30 21:52:36,966 - DEBUG - Data written to CSV file.
+2024-01-30 21:52:43,630 - DEBUG - Time to read_page 23.592923402786255
+2024-01-30 21:52:47,726 - INFO - BATCH COMPLETED
+2024-01-30 21:52:47,731 - INFO - Started scraping: 2023/10/07
+2024-01-30 21:52:49,185 - INFO - links extracted: ['https://www.wsj.com/business/cruise-lines-pursue-greener-journeys-ahead-of-new-climate-rules-78a0dc4f', 'https://www.wsj.com/finance/nyse-ice-mortgage-overhaul-e957d804', 'https://www.wsj.com/lifestyle/workplace/the-companies-bringing-the-office-to-remote-workers-bb91c6da', 'https://www.wsj.com/health/pharma/oprah-winfrey-ozempic-weightwatchers-new-formula-1ec4e706']
+2024-01-30 21:52:49,186 - INFO - Got 4 relevent posts
+2024-01-30 21:52:49,186 - DEBUG - 1 batches created
+2024-01-30 21:52:49,187 - DEBUG - 5 per window
+2024-01-30 21:52:51,193 - INFO - Current Batch length: 1
+2024-01-30 21:52:51,195 - INFO - Waiting for the jobs to complete
+2024-01-30 21:53:06,110 - DEBUG - Time to start webdriver 14.915260791778564
+2024-01-30 21:53:11,529 - DEBUG - Time to load data in new tabs 5.417493104934692
+2024-01-30 21:53:14,804 - DEBUG - Data written to CSV file.
+2024-01-30 21:53:18,031 - DEBUG - Data written to CSV file.
+2024-01-30 21:53:21,219 - DEBUG - Data written to CSV file.
+2024-01-30 21:53:24,406 - DEBUG - Data written to CSV file.
+2024-01-30 21:53:30,035 - DEBUG - Time to read_page 18.504963159561157
+2024-01-30 21:53:34,119 - INFO - BATCH COMPLETED
+2024-01-30 21:53:34,120 - INFO - Started scraping: 2023/10/08
+2024-01-30 21:53:36,111 - INFO - links extracted: ['https://www.wsj.com/health/pharma/bristol-myers-squibb-to-acquire-mirati-therapeutics-in-deal-worth-up-to-5-8-billion-7d83106', 'https://www.wsj.com/finance/fed-rate-hikes-lending-banks-hedge-funds-896cb20b', 'https://www.wsj.com/economy/consumers/us-economy-seniors-spending-money-d9f529c5', 'https://www.wsj.com/finance/investing/government-spending-hurting-bond-portfolio-8a063f39']
+2024-01-30 21:53:36,113 - INFO - Got 4 relevent posts
+2024-01-30 21:53:36,114 - DEBUG - 1 batches created
+2024-01-30 21:53:36,115 - DEBUG - 5 per window
+2024-01-30 21:53:38,128 - INFO - Current Batch length: 1
+2024-01-30 21:53:38,130 - INFO - Waiting for the jobs to complete
+2024-01-30 21:53:52,593 - DEBUG - Time to start webdriver 14.462709426879883
+2024-01-30 21:53:59,990 - DEBUG - Time to load data in new tabs 7.397362947463989
+2024-01-30 21:54:03,506 - DEBUG - Data written to CSV file.
+2024-01-30 21:54:06,817 - DEBUG - Data written to CSV file.
+2024-01-30 21:54:10,314 - DEBUG - Data written to CSV file.
+2024-01-30 21:54:13,662 - DEBUG - Data written to CSV file.
+2024-01-30 21:54:19,877 - DEBUG - Time to read_page 19.885961055755615
+2024-01-30 21:54:23,963 - INFO - BATCH COMPLETED
+2024-01-30 21:54:23,964 - INFO - Started scraping: 2023/10/09
+2024-01-30 21:54:25,368 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/09?page=2
+2024-01-30 21:54:26,527 - INFO - links extracted: ['https://www.wsj.com/business/energy-oil/israel-orders-chevron-to-shut-down-gas-platform-near-gaza-b93c2add', 'https://www.wsj.com/finance/banking/higher-rates-have-bank-stocks-on-the-mat-5e1d27a2', 'https://www.wsj.com/business/logistics/ship-freight-rates-tumble-as-u-s-consumers-buy-fewer-goods-ff7fc08']
+2024-01-30 21:54:26,530 - INFO - Got 3 relevent posts
+2024-01-30 21:54:26,530 - DEBUG - 1 batches created
+2024-01-30 21:54:26,530 - DEBUG - 5 per window
+2024-01-30 21:54:28,536 - INFO - Current Batch length: 1
+2024-01-30 21:54:28,538 - INFO - Waiting for the jobs to complete
+2024-01-30 21:54:41,217 - DEBUG - Time to start webdriver 12.67924976348877
+2024-01-30 21:54:47,685 - DEBUG - Time to load data in new tabs 6.467694997787476
+2024-01-30 21:54:51,230 - DEBUG - Data written to CSV file.
+2024-01-30 21:54:54,478 - DEBUG - Data written to CSV file.
+2024-01-30 21:54:57,735 - DEBUG - Data written to CSV file.
+2024-01-30 21:55:03,733 - DEBUG - Time to read_page 16.04724431037903
+2024-01-30 21:55:07,841 - INFO - BATCH COMPLETED
+2024-01-30 21:55:07,843 - INFO - Started scraping: 2023/10/10
+2024-01-30 21:55:09,444 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/10?page=2
+2024-01-30 21:55:10,508 - INFO - links extracted: ['https://www.wsj.com/economy/central-banking/higher-bond-yields-likely-to-extend-fed-rate-pause-53aa56fc', 'https://www.wsj.com/business/airlines/boeings-737-max-output-falls-to-lowest-level-in-two-years-cde7eaee', 'https://www.wsj.com/finance/chinas-country-garden-succumbs-to-debt-crisis-after-sales-drop-84c85a79', 'https://www.wsj.com/business/autos/canadian-auto-workers-go-on-strike-against-general-motors-568e355e']
+2024-01-30 21:55:10,510 - INFO - Got 4 relevent posts
+2024-01-30 21:55:10,510 - DEBUG - 1 batches created
+2024-01-30 21:55:10,511 - DEBUG - 5 per window
+2024-01-30 21:55:12,526 - INFO - Current Batch length: 1
+2024-01-30 21:55:12,528 - INFO - Waiting for the jobs to complete
+2024-01-30 21:55:26,895 - DEBUG - Time to start webdriver 14.366584300994873
+2024-01-30 21:55:33,887 - DEBUG - Time to load data in new tabs 6.990785598754883
+2024-01-30 21:55:37,142 - DEBUG - Data written to CSV file.
+2024-01-30 21:55:40,315 - DEBUG - Data written to CSV file.
+2024-01-30 21:55:43,515 - DEBUG - Data written to CSV file.
+2024-01-30 21:55:46,730 - DEBUG - Data written to CSV file.
+2024-01-30 21:55:53,021 - DEBUG - Time to read_page 19.13332509994507
+2024-01-30 21:55:57,113 - INFO - BATCH COMPLETED
+2024-01-30 21:55:57,114 - INFO - Started scraping: 2023/10/11
+2024-01-30 21:55:58,410 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/11?page=2
+2024-01-30 21:55:59,473 - INFO - links extracted: ['https://www.wsj.com/tech/u-s-in-chip-war-with-china-extends-some-allowances-for-asian-allies-8016337a', 'https://www.wsj.com/economy/central-banking/fed-minutes-show-officials-divided-on-future-rate-rise-e3ecba01', 'https://www.wsj.com/business/energy-oil/exxon-buys-pioneer-in-60-billion-deal-to-create-shale-giant-207c168b', 'https://www.wsj.com/business/airlines/the-revenge-travel-boom-shows-signs-of-slowing-27f9735d', 'https://www.wsj.com/finance/investing/muni-funds-that-use-borrowed-money-take-a-big-hit-1dce1221']
+2024-01-30 21:55:59,475 - INFO - Got 5 relevent posts
+2024-01-30 21:55:59,475 - DEBUG - 1 batches created
+2024-01-30 21:55:59,477 - DEBUG - 5 per window
+2024-01-30 21:56:01,488 - INFO - Current Batch length: 1
+2024-01-30 21:56:01,490 - INFO - Waiting for the jobs to complete
+2024-01-30 21:56:13,214 - DEBUG - Time to start webdriver 11.724815845489502
+2024-01-30 21:56:23,251 - DEBUG - Time to load data in new tabs 10.036217451095581
+2024-01-30 21:56:26,422 - DEBUG - Data written to CSV file.
+2024-01-30 21:56:29,950 - DEBUG - Data written to CSV file.
+2024-01-30 21:56:34,528 - DEBUG - Data written to CSV file.
+2024-01-30 21:56:39,108 - DEBUG - Data written to CSV file.
+2024-01-30 21:56:42,895 - DEBUG - Data written to CSV file.
+2024-01-30 21:56:52,775 - DEBUG - Time to read_page 29.523486137390137
+2024-01-30 21:56:57,241 - INFO - BATCH COMPLETED
+2024-01-30 21:56:57,242 - INFO - Started scraping: 2023/10/12
+2024-01-30 21:56:58,605 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/12?page=2
+2024-01-30 21:56:59,927 - INFO - links extracted: ['https://www.wsj.com/world/climate-advocates-fighting-exxon-were-hacked-in-far-flung-scheme-prosecutors-say-83d6927f', 'https://www.wsj.com/economy/central-banking/cpi-report-september-mild-inflation-862679f7', 'https://www.wsj.com/business/fda-to-ban-sales-of-vuse-menthol-e-cigarettes-5cf916cc', 'https://www.wsj.com/business/media/disney-agonized-about-sports-betting-now-its-going-all-in-70b31f3b', 'https://www.wsj.com/business/media/hollywood-studios-suspend-talks-with-actors-5fdda1d6', 'https://www.wsj.com/business/amc-entertainment-ceo-adam-aron-says-he-was-victim-of-blackmail-plot-8180abbd', 'https://www.wsj.com/finance/investing/super-investor-sam-altmans-interests-collide-in-a-nuclear-merger-fe7cbfe4', 'https://www.wsj.com/finance/banking/are-high-rates-taking-a-toll-on-consumers-bank-earnings-will-provide-a-clue-ef008110', 'https://www.wsj.com/economy/the-federal-deficit-is-even-bigger-than-it-looks-6bc8a070']
+2024-01-30 21:56:59,931 - INFO - Got 9 relevent posts
+2024-01-30 21:56:59,931 - DEBUG - 1 batches created
+2024-01-30 21:56:59,931 - DEBUG - 5 per window
+2024-01-30 21:57:01,931 - INFO - Current Batch length: 2
+2024-01-30 21:57:01,934 - INFO - Waiting for the jobs to complete
+2024-01-30 21:57:16,288 - DEBUG - Time to start webdriver 14.354624032974243
+2024-01-30 21:57:42,950 - DEBUG - Time to start webdriver 41.01529622077942
+2024-01-30 21:57:45,465 - DEBUG - Time to load data in new tabs 29.172516107559204
+2024-01-30 21:57:49,543 - DEBUG - Data written to CSV file.
+2024-01-30 21:57:53,470 - DEBUG - Data written to CSV file.
+2024-01-30 21:57:57,314 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:00,710 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:04,443 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:07,553 - DEBUG - Time to load data in new tabs 24.59064245223999
+2024-01-30 21:58:11,304 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:15,076 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:17,713 - DEBUG - Time to read_page 32.233208894729614
+2024-01-30 21:58:19,045 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:23,274 - DEBUG - Data written to CSV file.
+2024-01-30 21:58:31,582 - DEBUG - Time to read_page 24.022616147994995
+2024-01-30 21:58:35,675 - INFO - BATCH COMPLETED
+2024-01-30 21:58:35,677 - INFO - Started scraping: 2023/10/13
+2024-01-30 21:58:37,212 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/13?page=2
+2024-01-30 21:58:38,803 - INFO - links extracted: ['https://www.wsj.com/health/healthcare/kaiser-permanente-unions-reach-deal-on-new-contracts-b2e8e999', 'https://www.wsj.com/finance/banking/jpmorganchase-jpm-q3-earnings-report-2023-db587ef', 'https://www.wsj.com/business/media/the-sticking-point-thats-keeping-actors-on-strike-f8088002', 'https://www.wsj.com/lifestyle/careers/feeling-stuck-jobs-homes-gyms-economy-f29e7434', 'https://www.wsj.com/business/retail/investors-bet-thriftier-chinese-shoppers-are-here-to-stay-70dfb5d']
+2024-01-30 21:58:38,806 - INFO - Got 5 relevent posts
+2024-01-30 21:58:38,806 - DEBUG - 1 batches created
+2024-01-30 21:58:38,806 - DEBUG - 5 per window
+2024-01-30 21:58:40,817 - INFO - Current Batch length: 1
+2024-01-30 21:58:40,819 - INFO - Waiting for the jobs to complete
+2024-01-30 21:58:59,366 - DEBUG - Time to start webdriver 18.547436714172363
+2024-01-30 21:59:12,755 - DEBUG - Time to load data in new tabs 13.388821840286255
+2024-01-30 21:59:16,218 - DEBUG - Data written to CSV file.
+2024-01-30 21:59:19,741 - DEBUG - Data written to CSV file.
+2024-01-30 21:59:23,284 - DEBUG - Data written to CSV file.
+2024-01-30 21:59:26,564 - DEBUG - Data written to CSV file.
+2024-01-30 21:59:29,767 - DEBUG - Data written to CSV file.
+2024-01-30 21:59:35,505 - DEBUG - Time to read_page 22.74795889854431
+2024-01-30 21:59:39,589 - INFO - BATCH COMPLETED
+2024-01-30 21:59:39,589 - INFO - Started scraping: 2023/10/14
+2024-01-30 21:59:41,110 - INFO - links extracted: ['https://www.wsj.com/business/energy-oil/gas-prices-fueled-summer-inflation-that-is-about-to-change-f5648db2', 'https://www.wsj.com/economy/global/a-soft-landing-in-the-u-s-could-be-hard-for-everyone-else-1db44fca', 'https://www.wsj.com/business/energy-oil/darren-woods-exxon-ceo-c35c476a']
+2024-01-30 21:59:41,114 - INFO - Got 3 relevent posts
+2024-01-30 21:59:41,115 - DEBUG - 1 batches created
+2024-01-30 21:59:41,116 - DEBUG - 5 per window
+2024-01-30 21:59:43,132 - INFO - Current Batch length: 1
+2024-01-30 21:59:43,134 - INFO - Waiting for the jobs to complete
+2024-01-30 21:59:58,233 - DEBUG - Time to start webdriver 15.099326372146606
+2024-01-30 22:00:03,251 - DEBUG - Time to load data in new tabs 5.015352010726929
+2024-01-30 22:00:06,837 - DEBUG - Data written to CSV file.
+2024-01-30 22:00:10,367 - DEBUG - Data written to CSV file.
+2024-01-30 22:00:13,660 - DEBUG - Data written to CSV file.
+2024-01-30 22:00:20,038 - DEBUG - Time to read_page 16.785752773284912
+2024-01-30 22:00:24,111 - INFO - BATCH COMPLETED
+2024-01-30 22:00:24,112 - INFO - Started scraping: 2023/10/15
+2024-01-30 22:00:25,634 - INFO - links extracted: ['https://www.wsj.com/business/retail/rite-aid-bankruptcy-filing-opioid-a7e9ffe5', 'https://www.wsj.com/business/energy-oil/albemarle-drops-4-16-billion-offer-for-lithium-miner-liontown-resources-11316172', 'https://www.wsj.com/world/china/how-evergrandes-chief-tried-to-turn-things-aroundand-failed-eb28769', 'https://www.wsj.com/arts-culture/film/taylor-swifts-the-eras-tour-movie-nears-100-million-u-s-debut-313178f6', 'https://www.wsj.com/business/energy-oil/bp-oil-refinery-brothers-tragedy-6e90f1b0', 'https://www.wsj.com/finance/banking/these-companies-are-being-squeezed-by-higher-rates-765eed83', 'https://www.wsj.com/finance/traders-case-tests-dojs-policing-of-global-currency-market-4a8257ba']
+2024-01-30 22:00:25,637 - INFO - Got 7 relevent posts
+2024-01-30 22:00:25,637 - DEBUG - 1 batches created
+2024-01-30 22:00:25,637 - DEBUG - 5 per window
+2024-01-30 22:00:27,651 - INFO - Current Batch length: 2
+2024-01-30 22:00:27,653 - INFO - Waiting for the jobs to complete
+2024-01-30 22:00:44,503 - DEBUG - Time to start webdriver 16.851040840148926
+2024-01-30 22:01:04,426 - DEBUG - Time to start webdriver 36.7726366519928
+2024-01-30 22:01:05,573 - DEBUG - Time to load data in new tabs 21.06864285469055
+2024-01-30 22:01:09,443 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:09,976 - DEBUG - Time to load data in new tabs 5.544409513473511
+2024-01-30 22:01:13,492 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:13,885 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:17,683 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:17,764 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:21,385 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:24,860 - DEBUG - Data written to CSV file.
+2024-01-30 22:01:27,289 - DEBUG - Time to read_page 17.312077283859253
+2024-01-30 22:01:34,111 - DEBUG - Time to read_page 28.53365159034729
+2024-01-30 22:01:38,187 - INFO - BATCH COMPLETED
+2024-01-30 22:01:38,188 - INFO - Started scraping: 2023/10/16
+2024-01-30 22:01:40,465 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/16?page=2
+2024-01-30 22:01:41,717 - INFO - links extracted: ['https://www.wsj.com/business/hospitality/sweetgreen-hires-kale-shooting-robots-to-speed-up-service-b8e071c4', 'https://www.wsj.com/finance/goldman-sachs-wants-out-of-consumer-lending-employees-say-it-cant-happen-fast-enough-17e98a30']
+2024-01-30 22:01:41,719 - INFO - Got 2 relevent posts
+2024-01-30 22:01:41,720 - DEBUG - 1 batches created
+2024-01-30 22:01:41,720 - DEBUG - 5 per window
+2024-01-30 22:01:43,728 - INFO - Current Batch length: 1
+2024-01-30 22:01:43,730 - INFO - Waiting for the jobs to complete
+2024-01-30 22:01:59,486 - DEBUG - Time to start webdriver 15.755622148513794
+2024-01-30 22:02:02,477 - DEBUG - Time to load data in new tabs 2.988831043243408
+2024-01-30 22:02:05,713 - DEBUG - Data written to CSV file.
+2024-01-30 22:02:09,030 - DEBUG - Data written to CSV file.
+2024-01-30 22:02:14,673 - DEBUG - Time to read_page 12.196168422698975
+2024-01-30 22:02:18,779 - INFO - BATCH COMPLETED
+2024-01-30 22:02:18,780 - INFO - Started scraping: 2023/10/17
+2024-01-30 22:02:20,992 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/17?page=2
+2024-01-30 22:02:22,366 - INFO - links extracted: ['https://www.wsj.com/economy/consumers/us-economy-retail-sales-september-2023-5982a6f', 'https://www.wsj.com/finance/banking/goldman-sachs-gs-q3-earnings-report-2023-eb1a8649', 'https://www.wsj.com/business/telecom/t-mobile-customers-watch-your-bill-wireless-giant-is-automatically-moving-some-users-to-more-expensive-plans-6ebf3b45', 'https://www.wsj.com/finance/investing/distressed-debt-funds-have-lost-big-on-china-property-bets-c94011df']
+2024-01-30 22:02:22,369 - INFO - Got 4 relevent posts
+2024-01-30 22:02:22,369 - DEBUG - 1 batches created
+2024-01-30 22:02:22,370 - DEBUG - 5 per window
+2024-01-30 22:02:24,373 - INFO - Current Batch length: 1
+2024-01-30 22:02:24,375 - INFO - Waiting for the jobs to complete
+2024-01-30 22:02:36,762 - DEBUG - Time to start webdriver 12.387826442718506
+2024-01-30 22:02:58,714 - DEBUG - Time to load data in new tabs 21.949853658676147
+2024-01-30 22:03:02,150 - DEBUG - Data written to CSV file.
+2024-01-30 22:03:05,920 - DEBUG - Data written to CSV file.
+2024-01-30 22:03:09,284 - DEBUG - Data written to CSV file.
+2024-01-30 22:03:12,659 - DEBUG - Data written to CSV file.
+2024-01-30 22:03:18,988 - DEBUG - Time to read_page 20.273066759109497
+2024-01-30 22:03:23,081 - INFO - BATCH COMPLETED
+2024-01-30 22:03:23,084 - INFO - Started scraping: 2023/10/18
+2024-01-30 22:03:24,520 - INFO - next_url:https://www.wsj.com/news/archive/2023/10/18?page=2
+2024-01-30 22:03:25,839 - INFO - links extracted: ['https://www.wsj.com/business/airlines/delta-air-lines-makes-changes-to-its-skymiles-loyalty-programagain-b66519e6', 'https://www.wsj.com/finance/chinas-country-garden-was-given-a-second-chance-to-make-a-bond-payment-it-failed-57cf66a7', 'https://www.wsj.com/business/retail/costco-taps-coo-ron-vachris-as-next-ceo-78b6d97b', 'https://www.wsj.com/economy/consumers/household-net-worth-surged-after-the-pandemic-hit-98c9cd3c', 'https://www.wsj.com/business/media/how-the-nba-plans-to-remake-its-tv-deals-and-score-billions-for-its-stars-32678182', 'https://www.wsj.com/business/come-in-three-days-or-just-quit-some-companies-give-remote-workers-an-ultimatum-3212a460', 'https://www.wsj.com/business/rite-aid-stores-closing-after-bankruptcy-see-the-list-463df5d7', 'https://www.wsj.com/business/airlines/how-united-airlines-is-changing-its-boarding-process-for-economy-passengers-48f8a03']
+2024-01-30 22:03:25,842 - INFO - Got 8 relevent posts
+2024-01-30 22:03:25,842 - DEBUG - 1 batches created
+2024-01-30 22:03:25,842 - DEBUG - 5 per window
+2024-01-30 22:03:27,856 - INFO - Current Batch length: 2
+2024-01-30 22:03:27,857 - INFO - Waiting for the jobs to complete
+2024-01-30 22:03:45,882 - DEBUG - Time to start webdriver 18.02498960494995
+2024-01-30 22:04:04,331 - DEBUG - Time to load data in new tabs 18.44468355178833
+2024-01-30 22:04:08,153 - DEBUG - Data written to CSV file.
+2024-01-30 22:04:12,027 - DEBUG - Data written to CSV file.
+2024-01-30 22:04:15,683 - DEBUG - Data written to CSV file.
+2024-01-30 22:04:19,293 - DEBUG - Data written to CSV file.
+2024-01-30 22:04:22,511 - DEBUG - Data written to CSV file.
+2024-01-30 22:04:28,487 - DEBUG - Time to read_page 24.135791540145874

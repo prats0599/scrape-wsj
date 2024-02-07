@@ -1,9 +1,6 @@
 """
 This is the scrapper wrapper. It communicates with the scrapper
 to retrive the data
-
-Author: Muneeb Ur Rehman (muneeb0035@gmail.com)
-Date: 18 July 2023
 """
 
 from defaults import DATE_URL, LOGGER
@@ -11,6 +8,7 @@ from inputs import TAB_PER_WIN, BATCH_SIZE, LOCAL_TEST
 
 from datetime import timedelta
 import wsj_scrapper
+import time
 
 
 class ScrapeData():
@@ -29,10 +27,21 @@ class ScrapeData():
             LOGGER.info(f'Started scraping: {date}')
             wsj_scrapper.get_day_data(url, new_dic)
             LOGGER.info(f"Got {len(new_dic[date])} relevent posts")
-            batch_data = self.CreateBatches(new_dic[date])
-            LOGGER.debug(f'{len(batch_data)} batches created')
-            LOGGER.debug(f'{TAB_PER_WIN} per window')
-            wsj_scrapper.get_content(batch_data)
+
+            retries = 0
+            while len(new_dic[date])==0 and retries <3:
+                time.sleep(5)
+                wsj_scrapper.get_day_data(url, new_dic)
+                LOGGER.info(f"Retry {retries}: Got {len(new_dic[date])} relevent posts")
+                retries += 1
+            if len(new_dic[date])>0:
+                batch_data = self.CreateBatches(new_dic[date])
+                LOGGER.debug(f'{len(batch_data)} batches created')
+                LOGGER.debug(f'{TAB_PER_WIN} per window')
+                time.sleep(2)
+                wsj_scrapper.get_content(batch_data)
+            else:
+                LOGGER.info(f"No relevent posts found for:{date}")
             if LOCAL_TEST:
                 break
 

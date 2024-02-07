@@ -1,8 +1,5 @@
 """
 This script configures the logger for the logging.
-
-Author: Muneeb Ur Rehman (muneeb0035@gmail.com)
-Date: 18 July 2023
 """
 import logging
 
